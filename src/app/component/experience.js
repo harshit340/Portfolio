@@ -18,21 +18,21 @@ export const workExperienceData = [
     title: "Hacker House Goa",
     company: "WEB3 Hackathon",
     date: "Aug 2024",
-    description: "Contributed to blockchain-based development and innovative solutions during the WEB3 Hackathon, focusing on user-centric decentralized applications.",
+    description: "Played a pivotal role in developing NEXTPAY, a blockchain-based payment platform. Focused on frontend development and API integration to enable seamless Ethereum transactions across multiple EVM-compatible blockchains.",
     image: hackerHouseImg,
   },
   {
     title: "RideHack Phase-2",
     company: "Startup Hackathon",
     date: "Sep 2024",
-    description: "Participated in the Startup Hackathon, delivering scalable digital solutions with a focus on innovation and teamwork.",
+    description: "Achieved First Runner-Up and won a prize of ₹50,000 for CRAVEFEED, a platform designed to revolutionize food experiences. Contributed as a frontend developer and took charge of marketing strategies for the startup.",
     image: rideHackImg,
   },
   {
     title: "HackCBS 7.0",
     company: "Hackathon",
     date: "Nov 2024",
-    description: "Developed a full-stack project, focusing on collaborative problem-solving and leveraging modern web technologies.",
+    description: "Led a team of four to build a full-stack project focused on solving modern challenges using web technologies. Demonstrated leadership, teamwork, and technical expertise throughout the hackathon",
     image: hackCBSImg,
   },
 ];
@@ -93,6 +93,30 @@ export const Personal = [
     },
     
   ];
+
+  export const Skill = [
+    {
+      title:"HTML"
+    },
+    {
+      title:"CSS"
+    },
+    {
+      title:"ReactJS"
+    },
+    {
+      title:"NextJS"
+    },
+    {
+      title:"NodeJS"
+    },
+    {
+      title:"ExpressJS"
+    },
+    {
+      title:"TypeScript"
+    }
+  ]
 
 
 

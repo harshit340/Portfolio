@@ -3,6 +3,7 @@ import "./style.css"
 import {workExperienceData} from './component/experience';
 import { projects } from './component/experience';
 import { Personal } from './component/experience';
+import { Skill } from './component/experience';
 import Image from 'next/image';
 
 
@@ -12,8 +13,8 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className='main-align' >
-
-      <Card className='aside-info' style={{
+      <div>
+         <Card className='aside-info' style={{
         width: "400px",
         padding: "1.5rem",
 
@@ -41,13 +42,19 @@ export default function Home() {
          ))}
         </div>
         
-        <div>
-          <p>Skills</p>
-          <div>
-            
-          </div>
-        </div>
       </Card>
+      <Card style={{maxWidth:"400px" ,marginTop:"20px"}}>
+        <div style={{fontSize:"24px" , fontWeight:"bolder" , marginBottom:"20px" }}>Skills</div>
+        <div style={{display:"flex" , flexWrap:"wrap" ,gap:"10px",padding:"10px", justifyContent:"flex-start"}} >
+           {Skill.map((Skill,index)=>(
+          <div key={index} style={{border:"1px solid black" , backgroundColor:"black" , borderRadius:"2rem" , padding:"3px 8px 3px 8px", color:"white"}} >{Skill.title}</div>
+        ))}
+        </div>
+       
+      </Card>
+      </div>
+
+     
 
       <div>
 
@@ -57,8 +64,8 @@ export default function Home() {
             marginBottom: "1.5rem",
             boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
           }}>
-            <h1 style={{ fontSize: "26px", fontWeight: "bolder" }}>About me</h1>
-            <p style={{ fontSize: "16px", color: "rgb(74, 70, 70)" }}>Full-Stack Developer passionate about building intuitive, scalable digital solutions that captivate users and drive measurable growth. As the <span style={{ fontWeight: "bold" }}>Co-founder</span>  and <span style={{ fontWeight: "bold" }}>Frontend Developer </span> at <span style={{ fontWeight: "bold" }}>CRAVEFEED</span>, an innovative app for food enthusiasts, With a strong foundation in modern web technologies and a deep commitment to mastering (DSA), I excel at solving complex problems efficiently, ensuring robust and optimized solutions. I strive to deliver user-centric designs that help brands stand out in an ever-evolving digital landscape.</p>
+            <h1 style={{ fontSize: "26px", fontWeight: "bolder" , marginBottom:"20px" }}>About me</h1>
+            <p style={{ fontSize: "16px", color: "rgb(74, 70, 70)" }}>Full-Stack Developer passionate about creating intuitive and scalable digital solutions that captivate users and drive growth. As <span style={{fontWeight:"bold"}}>Co-founder</span> and <span style={{fontWeight:"bold"}}>Frontend Developer</span>  at <span style={{fontWeight:"bold"}}>CRAVEFEED</span>, a food enthusiasts app, I specialize in modern web technologies and efficient problem-solving through a strong foundation in <span>DSA</span>. <span style={{fontWeight:"bold"}}> Winner of the RideHack Phase 2 Hackathon</span> , I deliver user-centric designs that help brands thrive in an evolving digital landscape.</p>
 
           </Card>
           <div className='feature-info'>
@@ -105,7 +112,7 @@ export default function Home() {
             > 
             <div>
             {workExperienceData.map((experience, index) => (
-              <div key={index}>
+              <div key={index} style={{marginBottom:"50px"}}>
                 <div style={{display:"flex" }}>
                 <Image src={experience.image} width={65} height={40} alt={experience.title} ></Image>
                 <div style={{marginLeft:"15px"}}>
