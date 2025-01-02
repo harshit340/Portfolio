@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <div className='nama-align'>
         <h1 style={{ fontSize: "20px", fontWeight: "bold"  }} >Harshit Shrivastava</h1>
-        <h2 style={{ marginTop: "-2%", fontWeight: 400, color: "gray" }}>Software Developer</h2>
+        <h2 style={{ marginTop: "-2%", fontWeight: 400, color: "gray" }}>Full-Stack Developer</h2>
         </div>
         </div>
         <h5 style={{ fontSize: "15px", paddingTop: "10px", color: "rgb(74, 70, 70)" }}>Full-Stack Developer focused on building scalable, user-centric web applications that drive innovation and deliver measurable impact. With expertise in front-end design, back-end systems, and modern frameworks, I create digital solutions aligned with business goals</h5>
