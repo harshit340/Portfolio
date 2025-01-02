@@ -2,7 +2,10 @@ import codifyNowImg from '../image/image.png';
 import hackerHouseImg from '../image/WhatsApp Image 2025-01-02 at 01.21.28_d68a06c5.jpg';
 import rideHackImg from '../image/RideHack.jpg';
 import hackCBSImg from '../image/HackCBS.jpg';
-
+import linkdin from "../image/linkdin.png";
+import leetcode from "../image/leetcode (1).png";
+import github from "../image/github.png";
+import email from "../image/email.png";
 export const workExperienceData = [
   {
     title: "Full-Stack Developer - (Internship)",
@@ -66,6 +69,29 @@ export const projects = [
       link: "https://github.com/harshit340/Foody",
     },
     // Add more projects as needed
+  ];
+export const Personal = [
+    {
+      title: "harshit_shrivastava340",
+      link: "https://www.linkedin.com/in/harshit-shrivastava340/",
+      image: linkdin,
+    },
+    {
+      title: "harshit177",
+      link: "https://leetcode.com/u/harshit177/",
+      image:leetcode
+    },
+    {
+      title: "harshit340",
+      link: "https://github.com/harshit340/",
+      image:github
+    },
+    {
+      title: "harshitshrivastava1509@gmail.com",
+      link: "#",
+      image:email
+    },
+    
   ];
 
 

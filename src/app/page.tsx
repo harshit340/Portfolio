@@ -2,7 +2,9 @@ import { Button, Card } from 'antd';
 import "./style.css"
 import {workExperienceData} from './component/experience';
 import { projects } from './component/experience';
+import { Personal } from './component/experience';
 import Image from 'next/image';
+
 
 
 
@@ -27,11 +29,18 @@ export default function Home() {
         </div>
         </div>
         <h5 style={{ fontSize: "15px", paddingTop: "10px", color: "rgb(74, 70, 70)" }}>Full-Stack Developer focused on building scalable, user-centric web applications that drive innovation and deliver measurable impact. With expertise in front-end design, back-end systems, and modern frameworks, I create digital solutions aligned with business goals</h5>
-        <Button type='primary' style={{ width: "100%", margin: "1rem 0", marginTop: "2rem" }}>Contact Me</Button>
-        <div>----------------------</div>
-        <div>linkedin</div>
-        <div>Github</div>
-        <div>leetcode</div>
+        <Button type='primary' style={{ width: "100%", margin: "1rem 0", marginTop: "2rem",backgroundColor:"black" }}>Download Resume</Button>
+        
+        <div style={{display:"flex" , flexDirection:"column"
+        }}>
+         {Personal.map((Personal,index)=>(
+          <div key={index} style={{display:"flex", marginTop:"10px"}}>
+            <Image src={Personal.image} width={25} height={10} alt={Personal.title}></Image>
+            <a href={Personal.link} style={{marginLeft:"5px", fontWeight:489 }}>{Personal.title}</a>
+          </div>
+         ))}
+        </div>
+        
         <div>
           <p>Skills</p>
           <div>
