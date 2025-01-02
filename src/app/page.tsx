@@ -17,9 +17,15 @@ export default function Home() {
 
         boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
       }}>
+        <div className='profile-align'>
+        <div>
         <Image src="/my.jpg" alt='heloo' width={150} height={150} className="profile-image"></Image>
-        <h1 style={{ fontSize: "20px", fontWeight: "bold" , marginTop:"20px"}}>Harshit Shrivastava</h1>
+        </div>
+        <div className='nama-align'>
+        <h1 style={{ fontSize: "20px", fontWeight: "bold"  }} >Harshit Shrivastava</h1>
         <h2 style={{ marginTop: "-2%", fontWeight: 400, color: "gray" }}>Software Developer</h2>
+        </div>
+        </div>
         <h5 style={{ fontSize: "15px", paddingTop: "10px", color: "rgb(74, 70, 70)" }}>Full-Stack Developer focused on building scalable, user-centric web applications that drive innovation and deliver measurable impact. With expertise in front-end design, back-end systems, and modern frameworks, I create digital solutions aligned with business goals</h5>
         <Button type='primary' style={{ width: "100%", margin: "1rem 0", marginTop: "2rem" }}>Contact Me</Button>
         <div>----------------------</div>
