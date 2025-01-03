@@ -30,7 +30,8 @@ export default function Home() {
         </div>
         </div>
         <h5 style={{ fontSize: "15px", paddingTop: "10px", color: "rgb(74, 70, 70)" }}>Full-Stack Developer focused on building scalable, user-centric web applications that drive innovation and deliver measurable impact. With expertise in front-end design, back-end systems, and modern frameworks, I create digital solutions aligned with business goals</h5>
-        <Button type='primary' style={{ width: "100%", margin: "1rem 0", marginTop: "2rem",backgroundColor:"black" }}>Download Resume</Button>
+        <a href='/FinalResume.pdf' download="FinalResume.pdf" > <Button type='primary' style={{ width: "100%", margin: "1rem 0", marginTop: "2rem",backgroundColor:"black" }}>Download Resume</Button></a>
+        
         
         <div style={{display:"flex" , flexDirection:"column"
         }}>
@@ -103,7 +104,7 @@ export default function Home() {
             <Card
               
               style={{
-                padding: "1.5rem",
+                
                 marginBottom: "1.5rem",
                 boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
                 maxWidth: "800px",
@@ -127,7 +128,7 @@ export default function Home() {
                     style={{
                       fontSize: "16px",
                       color: "rgb(74, 70, 70)",
-                      marginTop: "5px",
+                      marginTop: "20px",
                       marginBottom: "24px",
                     }}
                   >
